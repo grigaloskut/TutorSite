@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="adapt_style.css" type="text/css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <title>SadakovTheTutor</title>
+</head>
+<body>
+        <header id ='header' class="header">
+                <div id="header-bg"></div>
+                <div class="header__nav">
+                    <div class="menu__btn">
+                        <span></span>
+                    </div>
+                    <ul class="menu__burger">
+                        <li class="header__list-item header-link-burger">
+                            <a data-to ='directions' class="header-link ">Направления подготовки</a>
+                        </li>
+                        <li class="header__list-item header-link-burger">
+                            <a data-to ='prises' class="header-link ">Цены</a>
+                        </li>
+                        <li class="header__list-item header-link-burger">
+                            <a data-to ='about' class="header-link">Обо мне</a>
+                        </li>
+                        <li class="header__list-item header-link-burger">
+                            <a data-to ='contacts' class="header-link">Записаться</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_contacts">
+                    <div class="icons">
+                        <ul class="icons-list">
+                            <li class="icons-item">
+                                <a href="https://t.me/+79122994902" target="_blank" class='icons-link'><img src="/imgs/tg.svg" alt=""></a>
+                            </li>
+                            <li class="icons-item">
+                                <a href="https://wa.me/79122994902" target="_blank" class='icons-link'><img src="/imgs/wa.svg" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="phone">
+                        <a href="tel:+79122994902">
+                            +7 (912)299-49-02
+                        <a>
+                    </div>
+                </div>
+                
+        </header>
+        <main class="main">
+            
+            <div class="container">
+                <div class="lending">
+                    <h1 class="main__title">
+                        Репетитор<br>Дмитрий Садаков
+                    </h1>
+                    
+                    <p class="main__info">
+                        Привет! <br> Хочешь поступить в университет или поправить текущую успеваемость? <br>А может быть ты хочешь научиться <span>программировать</span>? <br> Со мной обучение может быть захватывающим!
+                    </p>
+                    <button class="main__btn btn btn-link" data-to='contacts'>
+                        Записаться
+                    </button>
+                </div>
+                
+                
+                <h3 class="directions" id="directions">
+                    Направления подготовки
+                </h3>
+    
+                <div class="directions__gallery">
+                    <div class="directions__slide">
+                        <ul class="slide__info">
+                            <li class="info_item">
+                                <img class="z" src="/imgs/SVG/1_Back to school lineal color/37-calendar.svg" alt=""><br>Cоздание сайтов с добавлением интерактива
+                            </li>
+                            <li class="info_item">
+                                <img class="z" src="/imgs/SVG/1_Back to school lineal color/46-chalk.svg" alt=""><br>Знакомство с разработкой браузерных игр
+                            </li>
+                            <li class="info_item">
+                                <img class="z" src="/imgs/SVG/1_Back to school lineal color/51-abc.svg" alt=""><br>Красивые анимации с помощью кода
+                            </li>
+                            <li class="info_item">
+                                <img class="z" src="/imgs/SVG/1_Back to school lineal color/44-student.svg" alt=""><br>
+                                Занятия для учеников 8-11 класс
+                            </li>
+                             
+                        </ul>
+                        
+                    </div>
+                    <div class="directions__slide">
+                        <ul class="slide__info">
+                            <li class="info_item">
+                                <img class="z" src="/imgs/SVG/1_Back to school lineal color/14-exam.svg" alt=""><br> Подготовка к зачетным единицам ВПР, ОГЭ, ЕГЭ
+                            </li>
+                            <li class="info_item">
+                                <img class="z" src="/imgs/SVG/1_Back to school lineal color/13-calculator.svg" alt=""><br>
+                                Улучшение текущей успеваемости по алгебре и геометрии
+                            </li>
+                            <li class="info_item">
+                                <img class="z" src="/imgs/SVG/1_Back to school lineal color/08-book.svg" alt=""><br>
+                                Задачи на реальных событиях в жизни или играх!
+                            </li>
+                            <li class="info_item">
+                                <img class="z" src="/imgs/SVG/1_Back to school lineal color/44-student.svg" alt=""><br>
+                                Занятия для учеников 6-11 класс
+                            </li>
+                        </ul>
+                       
+                </div>
+                <div class="slide__header">
+                    <p>Программирование</p>
+                    <a id="prev" onclick="prev_slide(-1)">&#171;</a>
+                    <a id="next" onclick="next_slide(1)">&#187;</a>
+                </div>
+                <div class="slide__header">
+                    <p>Математика</p>
+                    <a id="prev" onclick="prev_slide(-1)">&#171;</a>
+                    <a id="next" onclick="next_slide(1)">&#187;</a>
+                </div>
+            </div>
+            
+                <h3 class="prises" id="prises">
+                    Цены
+                </h3>
+                <div class="prises__block">
+                    <table class="prises__list">
+                        <tr>
+                            <td><img class="z" src="/imgs/SVG/1_Back to school lineal color/48-abacus.svg" alt=""></td>
+                            <th>Пробное занятие</th>
+                            <th>1 занятие</th>
+                            <th>5 занятий</th>
+                            <th>10 занятий</th>
+                            
+                        </tr>
+                        <tr>
+                            <th>Программирование</th>
+                            <td>Бесплатно</td>
+                            <td>1200&#8381;</td>
+                            <td>5300&#8381;<br><span>6000&#8381;</span></td>
+                            <td>10000&#8381;<br><span>12000&#8381;</span></td>
+                            
+                        </tr>
+                        <tr>
+                            <th>Математика</th>
+                            <td>Бесплатно</td>
+                            <td>800&#8381;</td>
+                            <td>3700&#8381;<br><span>4000&#8381;</span></td>
+                            <td>7000&#8381;<br><span>8000&#8381;</span></td>
+                            
+                        </tr>
+                    </table>
+                </div>
+                
+                <button class="red__btn btn btn-link" data-to='contacts'>
+                    Записаться
+                </button>
+                <h3 class="about" id="about">
+                    Обо мне
+                </h3>
+                <div class="about_img">
+                    <img class="ya" src="/imgs/ya2.png" alt="">
+                </div>
+                <div class="about__main">
+                    <div class="about__main-block">
+                        <p class="about__text">
+                            Я занимаюсь репетиторством более 2-х лет. Преподавал в двух онлайн школах математику, программирование и игростроение.<br>
+                            Являюсь выпускником Уральского Федерального Университета<br><br>
+                            Применяю в работе самые современные методики обучения. Стараюсь заинтересовать ученика предметом, т.к. такая система дает наиболее высокий результат. Не менее важным считаю вкладывать эмоциональную поддержку во время обучения, ведь ученик проходит через трудный этап, подвергаясь постоянному давлению из-за экзаменов. <br><br> Став не только учителем, но и другом мы будем вместе проходить путь подготовки к столь важным проверкам знаний. 
+                            
+                        </p> 
+                    </div>
+                    <div class="about__main-block">
+                        
+                    </div>
+                </div>
+                <div class="contacts_block">
+                    <h3 id="contacts">
+                        Запишись для консультации
+                    </h3>
+                    <form id="data_form" action="send.php" method="POST">
+                        <div class="name-field">
+                            <label class="text-field__label label _req" for="name">Имя</label>
+                            <input class="text-field__input input" type="text" name="name"  placeholder="Имя" required>
+                        </div>
+                        <div class="tel-field">
+                            <label class="tel-field__label label _req" for="phone">Телефон</label>
+                            <input class="tel-field__input input" type="text" name="phone" id="phone" placeholder="Телефон" required>
+                        </div>
+                        <button id="submit" type="button" class = "form_button">Отправить</button>
+                        <div class="status"></div>
+                    </form>
+                    
+                    <div class="hello">
+                        <p>Добро пожаловать в мою команду!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer" id="footer_contacts">
+            <div class="politics">
+                Политика конфиденциальности
+            </div>
+            <div class="footer_contacts">
+                <div class="phone">
+                    <a href="tel:+79122994902">
+                        +7 (912)299-49-02
+                    <a>
+                </div>
+                <div class="icons">
+                    <ul class="icons-list">
+                        <li class="icons-item">
+                            <a href="https://t.me/+79122994902" target="_blank" class='icons-link'><img src="/imgs/tg.svg" alt=""></a>
+                        </li>
+                        <li class="icons-item">
+                            <a href="https://wa.me/79122994902" target="_blank" class='icons-link'><img src="/imgs/wa.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </footer>
+    <script src="/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src='/form/js/jquery.maskedinput.js'></script>
+    <script src="/form/js/jquery.validate.min.js"></script>
+    <script src="/jq.js"></script>
+</body>
+</html>
